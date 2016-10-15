@@ -12,3 +12,12 @@ buster.testCase("hasAllUniqueCharacters()", {
     refute(thing.hasAllUniqueCharacters("abcdefgah"));
   }
 });
+
+buster.testCase("hasAllUniqueCharacters2()", {
+  "returns true when it does": function () {
+    assert(thing.hasAllUniqueCharacters2("abcdefgh"));
+  },
+  "returns false when it doesn't": function() {
+    refute(thing.hasAllUniqueCharacters2("abcdefgah"));
+  }
+});
