@@ -1,0 +1,22 @@
+{
+  "name": "javascript-practice",
+  "version": "0.0.0",
+  "description": "practice programming problems in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "buster-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tprost/javascript-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tprost/javascript-practice/issues"
+  },
+  "homepage": "https://github.com/tprost/javascript-practice#readme",
+  "dependencies": {
+    "buster": "^0.7.18"
+  }
+}
