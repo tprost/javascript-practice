@@ -20,5 +20,9 @@ module.exports = {
       }
     }
     return true;
+  },
+  reverse: function(str) {
+    if (str.length === 1) return str;
+    return module.exports.reverse(str.substring(1)) + str[0];
   }
 };

@@ -21,3 +21,12 @@ buster.testCase("hasAllUniqueCharacters2()", {
     refute(thing.hasAllUniqueCharacters2("abcdefgah"));
   }
 });
+
+buster.testCase("reverse()", {
+  "should reverse a three letter word": function () {
+    assert.equals(thing.reverse("cat"), "tac");
+  },
+  "should reverse a one letter word": function () {
+    assert.equals(thing.reverse("a"), "a");
+  }
+});
