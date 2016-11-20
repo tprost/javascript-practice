@@ -1,4 +1,21 @@
+
+
+function stringPermutations(str) {
+  if (str.length == 1) return [str];
+  var permutations = [];
+  for (var i = 0; i < str.length; i++) {
+    var character = str[i];
+    var rest = str.substring(0, i) + str.substring(i + 1);
+    var subPermutations = stringPermutations(rest);
+    for (var j = 0; j < subPermutations.length; j++) {
+      permutations.push(character + subPermutations[j]);
+    }
+  }
+  return permutations;
+}
+
 module.exports = {
+  stringPermutations: stringPermutations,
   sayHello: function() {
     return "hello";
   },

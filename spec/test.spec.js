@@ -30,3 +30,11 @@ buster.testCase("reverse()", {
     assert.equals(thing.reverse("a"), "a");
   }
 });
+
+buster.testCase("stringPermutations()", {
+  "should return stuff": function () {
+    var expected = ["cat", "cta", "act", "atc", "tca", "tac"];
+    var output = thing.stringPermutations("cat");
+    assert.equals(expected, output);
+  }
+});
